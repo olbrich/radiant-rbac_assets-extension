@@ -10,12 +10,13 @@ Truly the credit for this extension goes to Jim Gay at http://www.saturnflyer.co
 
 ---------------------------------------
 
-First Install the rbac_base extension from the Radiant CMS extension repository:
+First Install the rbac_base extension from the Radiant CMS extension repository then:
 
  'rake radiant:extensions:rbac_base:migrate'
  'rake radiant:extensions:rbac_base:update'
 
-Install rbac_assets :
+
+Install rbac_assets and run migration and update tasks:
 
 'rake radiant:extensions:rbac_assets:migrate'
 'rake radiant:extensions:rbac_assets:update'
