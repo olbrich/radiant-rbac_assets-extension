@@ -1,0 +1,30 @@
+=RBAC_Assets
+
+
+Based on rbac_snippets, is an extension for Radiant CMS that utilizes the the extension RBAC_Base to allow only users in the "Assets" role to edit assets. If you do not have the rbac_base extension installed it will raise a RbacSnippetsExtension::MissingRequirement exception when activated.
+
+See http://ext.radiantcms.org/extensions/87-rbac_base
+
+Truly the credit for this extension goes to Jim Gay at http://www.saturnflyer.com
+
+
+---------------------------------------
+
+First Install the rbac_base extension from the Radiant CMS extension repository:
+
+ 'rake radiant:extensions:rbac_base:migrate'
+ 'rake radiant:extensions:rbac_base:update'
+
+Install rbac_assets :
+
+'rake radiant:extensions:rbac_assets:migrate'
+'rake radiant:extensions:rbac_assets:update'
+
+
+Restart server
+
+
+
+
+
+  
