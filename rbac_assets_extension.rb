@@ -10,7 +10,7 @@ class RbacAssetsExtension < Radiant::Extension
   
   def activate
     raise RbacAssetsExtension::MissingRequirement.new('RbacBaseExtension must be installed and loaded first.') unless defined?(RbacBaseExtension)
-    admin.tabs["Assets"].visibility = [:assets]
+    #admin.tabs["Assets"].visibility = [:assets]
     Admin::AssetsController.class_eval {
       only_allow_access_to(:index, :new, :edit, :update, :create, :destroy,
         :when => :assets,
